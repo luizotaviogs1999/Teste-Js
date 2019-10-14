@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3F3079;
+}
+
+.container {
+    margin: auto 0;
+    max-width: 1200px;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    text-align: center;
+}
+
+.header-info img {
+    width: 160px;
+    height: 44px;
+    margin: 25px;
+    font-weight: normal;
+}
+
+.header-info a {
+    font-weight: bold;
+}
+
+.sobre-lunes {
+    color: #fff;
+    font-size: 36px;
+}
+
+.moedas {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    height: 300px;
+    width: 100%;
+    padding: 40px;
+}
+
+.m-tempo {
+    font-weight: bold;
+    font-size: 30px;
+    color: #555555;
+    width: 200px;
+    margin-right: 40px;
+}
+
+.config-moedas {
+    padding: 25px;
+    max-width: 400px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 35px rgba(63, 48, 121, 0.28);
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.info-moedas h3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #444444;
+}
+
+.sobre-moeda {
+    font-size: 20px;
+    color: #666666;
+}
+
+p {
+    margin-top: 10px;
+    color: #555555;
+    font-size: 18px;
+}
+
+.valor-btc,
+.valor-ltc {
+    font-size: 38px;
+    color: #444444;
+}
+
+.site-moeda {
+    font-style: italic;
+    font-weight: 300;
+    color: #959595;
+}
+
+.quebra-de-linha {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .sobre-moeda {
+        font-size: 18px;
+    }
+    .info-moedas h3 {
+        font-size: 30px;
+    }
+    .valor-btc,
+    .valor-ltc {
+        font-size: 30px;
+    }
+    .m-tempo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .m-tempo {
+        display: none;
+    }
+    .config-moedas {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sobre-lunes {
+        font-size: 30px;
+    }
+    .sobre-moeda {
+        font-size: 16px;
+    }
+    .info-moedas h3 {
+        font-size: 30px;
+    }
+    .valor-btc,
+    .valor-ltc {
+        font-size: 20px;
+    }
+    .m-tempo {
+        font-size: 20px;
+    }
+    p {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .moedas {
+        display: inline-block;
+    }
+    .config-moedas {
+        margin-top: 50px;
+        margin-right: 0;
+    }
+}
